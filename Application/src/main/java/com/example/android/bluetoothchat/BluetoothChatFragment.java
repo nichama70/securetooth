@@ -533,6 +533,7 @@ public class BluetoothChatFragment extends Fragment {
                 startActivityForResult(serverIntent, REQUEST_CONNECT_DEVICE_SECURE);
                 return true;
             }
+            /*
             case R.id.insecure_connect_scan: {
                 if(mChatService != null)
                     mChatService.start();
@@ -541,12 +542,13 @@ public class BluetoothChatFragment extends Fragment {
                 startActivityForResult(serverIntent, REQUEST_CONNECT_DEVICE_INSECURE);
                 return true;
             }
+             */
             case R.id.discoverable: {
                 // Ensure this device is discoverable by others
                 ensureDiscoverable();
                 return true;
             }
-            case R.id.ble_advertise: {
+            /*case R.id.ble_advertise: {
                 startAdvertising();
                 return true;
             }
@@ -554,7 +556,7 @@ public class BluetoothChatFragment extends Fragment {
                 startScanning();
                 return true;
             }
-
+*/
         }
         return false;
     }

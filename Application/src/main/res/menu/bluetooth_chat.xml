@@ -21,23 +21,8 @@
         android:title="@string/secure_connect"/>
 
     <item
-        android:id="@+id/insecure_connect_scan"
-        android:showAsAction="never"
-        android:title="@string/insecure_connect"/>
-
-    <item
         android:id="@+id/discoverable"
         android:showAsAction="never"
         android:title="@string/discoverable"/>
-
-    <item
-        android:id="@+id/ble_advertise"
-        android:showAsAction="never"
-        android:title="@string/ble_advertise"/>
-
-    <item
-        android:id="@+id/ble_discover"
-        android:showAsAction="never"
-        android:title="@string/ble_discover"/>
 
 </menu>

@@ -31,10 +31,12 @@ List<String> dirs = [
 
 android {
     compileSdkVersion 23
+    //noinspection GradleCompatible
     buildToolsVersion '23.0.0'
 
     defaultConfig {
         minSdkVersion 21
+        //noinspection ExpiredTargetSdkVersion
         targetSdkVersion 23
     }
 
