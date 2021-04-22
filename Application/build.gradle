@@ -2,10 +2,15 @@
 buildscript {
     repositories {
         jcenter()
+        maven {
+            url 'https://maven.google.com/'
+            name 'Google'
+        }
     }
 
+
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.1.0'
+        classpath 'com.android.tools.build:gradle:4.1.0'
     }
 }
 
@@ -13,7 +18,12 @@ apply plugin: 'com.android.application'
 
 repositories {
     jcenter()
+    maven {
+        url 'https://maven.google.com/'
+        name 'Google'
+    }
 }
+
 
 dependencies {
     compile "com.android.support:support-v4:23.0.0"
