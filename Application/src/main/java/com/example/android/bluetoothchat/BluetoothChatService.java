@@ -24,6 +24,9 @@ import android.content.Context;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.view.View;
+import android.widget.Button;
+import android.widget.LinearLayout;
 
 import com.example.android.common.logger.Log;
 
@@ -161,6 +164,9 @@ public class BluetoothChatService {
         mConnectThread = new ConnectThread(device, secure);
         mConnectThread.start();
         setState(STATE_CONNECTING);
+
+        Button btn = (Button) View.findViewById(R.id.btnSendPass);
+        btn.setEnabled(false);
     }
 
     /**
