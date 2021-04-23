@@ -165,8 +165,8 @@ public class BluetoothChatService {
         mConnectThread.start();
         setState(STATE_CONNECTING);
 
-        Button btn = (Button) View.findViewById(R.id.btnSendPass);
-        btn.setEnabled(false);
+        //Button btn = (Button) View.findViewById(R.id.btnSendPass);
+        //btn.setEnabled(false);
     }
 
     /**
