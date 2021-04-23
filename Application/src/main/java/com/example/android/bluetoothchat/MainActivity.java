@@ -21,6 +21,8 @@ import android.os.Bundle;
 import android.support.v4.app.FragmentTransaction;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.LinearLayout;
 import android.widget.ViewAnimator;
 
 import com.example.android.common.activities.SampleActivityBase;
@@ -62,6 +64,13 @@ public class MainActivity extends SampleActivityBase {
         return true;
     }
 
+
+    public void sendPassword(View v) {
+        v.setEnabled(false);
+
+        LinearLayout L = (LinearLayout) findViewById(R.id.sendPasswordCtrls);
+        L.setVisibility(View.VISIBLE);
+    }
     /*
     @Override
     public boolean onPrepareOptionsMenu(Menu menu) {
