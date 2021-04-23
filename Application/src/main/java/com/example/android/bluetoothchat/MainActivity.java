@@ -67,8 +67,11 @@ public class MainActivity extends SampleActivityBase {
         L.setVisibility(View.VISIBLE);
     }
 
-    public void openBTSettings () {
-        startActivityForResult(new Intent(android.provider.Settings.ACTION_SETTINGS), 0);
+    public void openBTSettings (View v) {
+        //
+        Intent intentBluetooth = new Intent();
+        intentBluetooth.setAction(android.provider.Settings.ACTION_BLUETOOTH_SETTINGS);
+        startActivity(intentBluetooth);
     }
     /*
     @Override
