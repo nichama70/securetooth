@@ -20,16 +20,10 @@ package com.example.android.bluetoothchat;
 import android.os.Bundle;
 import android.support.v4.app.FragmentTransaction;
 import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.LinearLayout;
-import android.widget.ViewAnimator;
 
 import com.example.android.common.activities.SampleActivityBase;
-import com.example.android.common.logger.Log;
-import com.example.android.common.logger.LogFragment;
-import com.example.android.common.logger.LogWrapper;
-import com.example.android.common.logger.MessageOnlyLogFilter;
 
 /**
  * A simple launcher activity containing a summary sample description, sample log and a custom
