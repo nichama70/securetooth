@@ -24,6 +24,7 @@ import android.view.Menu;
 import android.view.View;
 import android.widget.LinearLayout;
 
+
 import com.example.android.common.activities.SampleActivityBase;
 
 /**
@@ -36,7 +37,6 @@ import com.example.android.common.activities.SampleActivityBase;
 public class MainActivity extends SampleActivityBase {
 
     public static final String TAG = "MainActivity";
-
     // Whether the Log Fragment is currently shown
     private boolean mLogShown;
 
@@ -61,7 +61,6 @@ public class MainActivity extends SampleActivityBase {
 
 
     public void sendPassword(View v) {
-        v.setEnabled(false);
 
         LinearLayout L = (LinearLayout) findViewById(R.id.sendPasswordCtrls);
         L.setVisibility(View.VISIBLE);
