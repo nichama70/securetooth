@@ -17,6 +17,7 @@
 
 package com.example.android.bluetoothchat;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentTransaction;
 import android.view.Menu;
@@ -64,6 +65,10 @@ public class MainActivity extends SampleActivityBase {
 
         LinearLayout L = (LinearLayout) findViewById(R.id.sendPasswordCtrls);
         L.setVisibility(View.VISIBLE);
+    }
+
+    public void openBTSettings () {
+        startActivityForResult(new Intent(android.provider.Settings.ACTION_SETTINGS), 0);
     }
     /*
     @Override
